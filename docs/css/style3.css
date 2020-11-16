@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Coda&family=Girassol&family=Kelly+Slab&display=swap');
+
+html, body {
+	height: 100%;
+	margin : 0;
+	padding : 0;
+}
+
+.main-title{
+	text-transform: uppercase;
+}
+
+#myDiv {
+	display: none;
+  }
+
+/* loader */
+
+#loader{
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding-top: 400px;
+	background: #fff;
+}
+
+#loader img{
+	width: 200px;
+}
+
+/* Banner */
+
+#banner {
+	height: 100%;
+	vertical-align: middle;
+	background-color: #485461;
+	background-image: linear-gradient(320deg, #485461 0%, #28313b 74%);
+	background-image: url('../images/intro-bg.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.intro-box{
+  height: 100vh;
+  /* overflow: hidden; */
+  /* display: flex; */
+  align-items: center;
+  /* justify-content: center; */
+  text-align: center;
+}
+
+.intro-box h1 {
+	color: #FFFFFF;
+	font-family: 'Coda', serif;
+	font-size: 3.4rem;
+	line-height: 1.071;
+	text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.intro-box .intro-position {
+	/* font-family: Kelly Slab; */
+	/* font-size: 1.7rem; */
+	font-size: 2rem;
+	line-height: 2.4rem;
+	/* text-transform: uppercase; */
+	letter-spacing: .2rem;
+	color: #066dc2;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.myBtn{
+	cursor: pointer;
+	border : 1px solid #fff;
+	width : 180px;
+	height: 50px;
+	border-radius: 50px;
+	margin : 0 auto;
+	transition: all 1s;
+	font-size : 20px;
+	padding : 10px;
+}
+
+.myBtn:hover{
+	background : #333;
+	color : white;
+	border : 1px solid #444;
+}
+
+#about-btn{
+	color : #fff;
+}
+
+@media ( max-width : 425px){
+	h1{
+		font-size: 3rem !important;
+	}
+}
+
+/* About */
+
+#about{
+	padding : 100px 0px;
+	height: 150vh;
+}
+
+#about #skills p{
+	color : #495057;
+}
+
+#about span{
+	font-size : 16px;
+}
+
+@media ( min-width : 768px ){
+	#about #skills p{
+		width : 15%;
+	}
+	#about #skills br{
+		display: none;
+	}
+}
+
+@media ( max-width : 767px ){
+	#about #skills p{
+		width : 25%;
+	}
+	#about #skills br{
+		display: block;
+	}
+}
+
+/* Education */
+
+#education{
+	padding : 100px 0px;
+	height: 150vh;
+	/* background : #495057; */
+	background-color: #485461;
+	background-image: linear-gradient(320deg, #485461 0%, #28313b 74%);
+	color : #b9bcbf;
+}
+
+#education h4{
+	font-size: 1.2rem;
+	font-weight: lighter;
+}
+
+@media ( max-width : 425px ){
+	#education{
+		height: 160vh;
+	}
+	#education h3{
+		font-size: 1.5rem;
+	}
+	#education h4{
+		font-size: 1.1rem;
+	}
+}
+
+/* Work Experience */
+
+#work{
+	padding : 100px 0px;
+	height : 150vh;
+}
+
+#work i,#education i{
+	font-size: 20px;
+	margin-top: .3rem;
+	width: 50px;
+	height: 50px;
+	border: 1px solid #333;
+	background: #444;
+	padding: 14px;
+	color: #fff;
+	border-radius: 50%;
+}
+
+/* Portfolio */
+
+#portfolio{
+	padding : 100px 0px;
+	height : 150vh;
+	background-color: #485461;
+	background-image: linear-gradient(320deg, #485461 0%, #28313b 74%);
+	color : #b9bcbf;
+}
+
+#portfolio .main-title{
+	color: #b9bcbf;
+}
+
+#portfolio .sub-title{
+	color: #b9bcbf;
+	font-size: 1.15rem;
+}
+
+.filter-button{
+	font-size: 18px;
+	border: 1px solid #222629;
+	border-radius: 5px;
+	text-align: center;
+	color: #222629;
+	margin-bottom: 30px;
+}
+
+.filter-button:hover{
+	font-size: 18px;
+	border: 1px solid #4b4d4e;
+	border-radius: 5px;
+	text-align: center;
+	color: #ffffff;
+	background-color: #222629;
+
+}
+
+#portfolio .choose{
+	background-color : #6c757d;
+	color : #fff;
+}
+
+.btn-default:active .filter-button:active{
+	background-color: #42B32F;
+	color: #fff;
+}
+
+#portfolio img{
+	width: 100%;
+	height : 200px;
+}
+
+.gallery_product{
+	margin-bottom: 30px;
+}
+
+@media ( max-width : 768px ){
+	#portfolio{
+		height : 200vh;
+	}
+	#portfolio img{
+		width: 100%;
+		height : 150px;
+	}
+}
+
+/*Contact*/
+
+#contact{
+	padding : 100px 0px;
+	height: 100vh;
+}
+
+#contact .card{
+	background: none;
+	border : none;
+}
+
+#contact .form-group{
+	margin : 35px 0px;
+}
+
+#contact input,
+#contact textarea{
+	background : transparent;
+	border : none;
+	border-bottom: 1px solid rgb(53, 52, 52);
+	border-radius : 0;
+	color : rgb(53, 52, 52);
+}
+
+#contact .form-control:focus{
+	box-shadow: none;
+}
+
+#contact button{
+	background :#495057;
+	color: #fff;
+}
+
+#contact button:hover{
+	background :#202122;
+	color: #fff;
+}
+
+/* Top Button */
+
+#topBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+
