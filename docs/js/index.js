@@ -80,7 +80,7 @@ $(function() {
   function sidebarActive()
   {
     const scrollTop = $(window).scrollTop();
-
+      console.log(screenTop);
       if( scrollTop < 800 ){
         $("#top li").removeClass('active');
         $( "#top ul li:nth-child(1)" ).addClass("active");

@@ -21,12 +21,30 @@ html, body {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	padding-top: 400px;
+	padding-top: 20%;
 	background: #fff;
 }
 
 #loader img{
 	width: 200px;
+}
+
+@media  (min-width: 426px) and ( max-width : 4768px){
+	#loader{
+		padding-top : 30%;
+	}
+}
+
+@media (min-width: 376px) and ( max-width : 425px){
+	#loader{
+		padding-top : 50%;
+	}
+}
+
+@media ( max-width : 375px){
+	#loader{
+		padding-top : 55%;
+	}
 }
 
 /* Banner */
@@ -94,16 +112,22 @@ html, body {
 }
 
 @media ( max-width : 425px){
-	h1{
-		font-size: 3rem !important;
+	#banner h1{
+		font-size: 28px !important;
+	}
+	#about-btn{
+		width : 110px;
+		height: 38px;
+		font-size: 15px;
+		padding : 8px;
 	}
 }
 
 /* About */
 
 #about{
-	padding : 100px 0px;
-	height: 150vh;
+	padding : 50px 0px;
+	height: 110vh;
 }
 
 #about #skills p{
@@ -112,6 +136,12 @@ html, body {
 
 #about span{
 	font-size : 16px;
+}
+
+@media(min-width: 768px ) and ( max-width: 1024px){
+	#about {
+		height: 130vh;
+	}
 }
 
 @media ( min-width : 768px ){
@@ -124,6 +154,19 @@ html, body {
 }
 
 @media ( max-width : 767px ){
+
+	#about{
+		height: 145vh;
+	}
+
+	#about p{
+		font-size : 15px;
+	}
+
+	#about span{
+		font-size: 14px;
+	}
+
 	#about #skills p{
 		width : 25%;
 	}
@@ -132,39 +175,68 @@ html, body {
 	}
 }
 
+@media (max-width : 760px){
+	#about #skills #frontend span{
+		line-height : 1.8rem;
+		margin-bottom: 15px;
+	}
+}
+
 /* Education */
 
 #education{
-	padding : 100px 0px;
-	height: 150vh;
+	padding : 50px 0px;
+	height: 100vh;
 	/* background : #495057; */
 	background-color: #485461;
 	background-image: linear-gradient(320deg, #485461 0%, #28313b 74%);
 	color : #b9bcbf;
 }
 
-#education h4{
-	font-size: 1.2rem;
+#education h4,#education h5{
+	/* font-size: 1.2rem; */
 	font-weight: lighter;
 }
 
 @media ( max-width : 425px ){
-	#education{
-		height: 160vh;
-	}
 	#education h3{
 		font-size: 1.5rem;
 	}
 	#education h4{
-		font-size: 1.1rem;
+		font-size: 1.2rem;
+	}
+	#education h5{
+		font-size: 1rem;
+	}
+}
+
+@media(min-width: 426px ) and ( max-width: 1024px){
+	#education {
+		height: 120vh;
+	}
+}
+
+@media (min-width: 330px) and ( max-width : 425px){
+	#education{
+		height : 130vh;
+	}
+}
+
+@media ( max-width : 320px){
+	#education{
+		height : 150vh;
 	}
 }
 
 /* Work Experience */
 
 #work{
-	padding : 100px 0px;
-	height : 150vh;
+	padding : 50px 0px;
+	height : 100vh;
+}
+
+#work h4,#work h5{
+	font-weight: lighter;
 }
 
 #work i,#education i{
@@ -179,11 +251,23 @@ html, body {
 	border-radius: 50%;
 }
 
+@media ( max-width : 425px ){
+	#work p{
+		font-size: 0.8rem;
+	}
+	#work h4{
+		font-size: 1.2rem;
+	}
+	#work h5{
+		font-size: 1rem;
+	}
+}
+
 /* Portfolio */
 
 #portfolio{
-	padding : 100px 0px;
-	height : 150vh;
+	padding : 50px 0px;
+	height : 130vh;
 	background-color: #485461;
 	background-image: linear-gradient(320deg, #485461 0%, #28313b 74%);
 	color : #b9bcbf;
@@ -217,6 +301,10 @@ html, body {
 
 }
 
+.filter-button:focus{
+	box-shadow : none;
+}
+
 #portfolio .choose{
 	background-color : #6c757d;
 	color : #fff;
@@ -238,7 +326,7 @@ html, body {
 
 @media ( max-width : 768px ){
 	#portfolio{
-		height : 200vh;
+		height : 120vh;
 	}
 	#portfolio img{
 		width: 100%;
@@ -246,10 +334,25 @@ html, body {
 	}
 }
 
+@media ( max-width : 425px ){
+	#portfolio{
+		height : 150vh;
+	}
+	.filter-button{
+		font-size: 15px;
+	}
+}
+
+@media ( max-width : 320px ){
+	#portfolio{
+		height : 165vh;
+	}
+}
+
 /*Contact*/
 
 #contact{
-	padding : 100px 0px;
+	padding : 50px 0px;
 	height: 100vh;
 }
 
