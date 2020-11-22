@@ -7,24 +7,24 @@
             </div>
             <div class="col-md-6 pb-5">
                 <!--Form with header-->
-                <form action="./function.php" method="post">
+                <form action="#" method="post" onsubmit="return false;" >
                     <div class="card rounded-0">
                         <div class="card-body">
                             <!--Body-->
                             <div class="form-group">
-                                <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                                <input type="text" class="form-control" name="name" placeholder="Your Name">
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                                <input type="email" class="form-control" name="email" placeholder="Your Email">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" name="phone" placeholder="Your Phone" required>
+                                <input type="text" class="form-control" name="phone" placeholder="Your Phone">
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" placeholder="Your Message" name="desc"  required></textarea>
+                                <textarea class="form-control" placeholder="Your Message" name="desc" ></textarea>
                             </div>
                             <div class="text-center">
-                                <button type="submit" class="btn btn-contact btn-block rounded-0 py-2">Send Message</button>
+                                <button type="submit" class="btn btn-contact btn-block rounded-0 py-2" data-toggle="modal" data-target="#contact-modal">Send Message</button>
                             </div>
                         </div>
                     </div>

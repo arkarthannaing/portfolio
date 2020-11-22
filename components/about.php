@@ -14,7 +14,7 @@
 
                 <div class="d-flex">
                     <p class="mr-3">Frontend </p>
-                    <span> HTML , CSS , Bootstrap , <br> Tailwind , Javascript , JQuery</span>
+                    <span> HTML , CSS , Bootstrap , <br> Tailwind , JavaScript , jQuery , Vue.js (Basic)</span>
                 </div>
                 <div class="d-flex">
                     <p class="mr-3">Backend </p>
@@ -22,11 +22,11 @@
                 </div>
                 <div class="d-flex">
                     <p class="mr-3">Database </p>
-                    <span> MYSQL</span>
+                    <span> MySQL</span>
                 </div>
                 <div class="d-flex">
                     <p class="mr-3">CMS </p>
-                    <span> Wordpress </span>
+                    <span> WordPress </span>
                 </div>
                 <div class="d-flex">
                     <p class="mr-3">Chatbot </p>
@@ -34,7 +34,7 @@
                 </div>
                 <div class="d-flex">
                     <p class="mr-3"> Others </p>
-                    <span> Ajax , Git , Vue JS (Basic) , <br> Photoshop , Microsoft Office </span>
+                    <span> Ajax , Git , Google Analytics , SEO Basic , <br> Photoshop , Microsoft Office </span>
                 </div>
             </div>
 
@@ -48,7 +48,7 @@
                 </div>
                 <div class="d-flex">
                     <p class="mr-3"> English </p>
-                    <span> Intermediate Level </span>
+                    <span> Pre-Intermediate Level </span>
                 </div>
             </div>
 
