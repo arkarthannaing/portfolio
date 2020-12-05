@@ -91,23 +91,23 @@ $(function() {
   function sidebarActive()
   {
     const scrollTop = $(window).scrollTop();
-      console.log(screenTop);
-      if( scrollTop < 800 ){
+      console.log(scrollTop);
+      if( scrollTop < 600 ){
         $("#top li").removeClass('active');
         $( "#top ul li:nth-child(1)" ).addClass("active");
-      }if( scrollTop > 800 && scrollTop < 2200){
+      }if( scrollTop > 600 && scrollTop < 1300){
         $("#top li").removeClass('active');
         $( "#top ul li:nth-child(2)" ).addClass("active");
-      }else if( scrollTop > 2200 && scrollTop < 3870){
+      }else if( scrollTop > 1300 && scrollTop < 2000){
         $("#top li").removeClass('active');
         $( "#top ul li:nth-child(3)" ).addClass("active");
-      }else if( scrollTop > 3870 && scrollTop < 4840){
+      }else if( scrollTop > 2000 && scrollTop < 2600){
         $("#top li").removeClass('active');
         $( "#top ul li:nth-child(4)" ).addClass("active");
-      }else if( scrollTop > 4840 && scrollTop < 6160){
+      }else if( scrollTop > 2600 && scrollTop < 3500){
         $("#top li").removeClass('active');
         $( "#top ul li:nth-child(5)" ).addClass("active");
-      }else if( scrollTop > 6160 ){
+      }else if( scrollTop > 3500 ){
         $("#top li").removeClass('active');
         $( "#top ul li:nth-child(6)" ).addClass("active");
       }
