@@ -60,6 +60,17 @@ $(function() {
     $('#success').removeClass('expand');
   });
 
+// $(window).on('scroll', function() {
+//     $('.target').each(function() {
+//         console.log($(this));
+//         if($(window).scrollTop() >= $(this).offset().top) {
+          
+//             var id = $(this).attr('id');
+//             $('#top a').removeClass('active');
+//             $('#top a[href=#'+ id +']').addClass('active');
+//         }
+//     });
+// });
 
   var topBtn = document.getElementById("topBtn");
 
@@ -67,7 +78,7 @@ $(function() {
 
   function scrollFunction() {
 
-    sidebarActive();
+    // sidebarActive();
 
     if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
       topBtn.style.display = "block";

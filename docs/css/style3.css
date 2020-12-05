@@ -29,7 +29,7 @@ html, body {
 	width: 200px;
 }
 
-@media  (min-width: 426px) and ( max-width : 4768px){
+@media  (min-width: 426px) and ( max-width : 476px){
 	#loader{
 		padding-top : 30%;
 	}
@@ -127,7 +127,7 @@ html, body {
 
 #about{
 	padding : 50px 0px;
-	height: 110vh;
+	height: 115vh;
 }
 
 #about #skills p{

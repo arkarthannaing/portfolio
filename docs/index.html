@@ -32,22 +32,22 @@
             <div id="top">
                 <ul class="list-unstyled components">
                     <li class="active">
-                        <a href="#" class="go" dest="banner"> <i class="fa fa-home"></i> Home </a>
+                        <a href="#banner" class="go" dest="banner"> <i class="fa fa-home"></i> Home </a>
                     </li>
                     <li>
-                        <a href="#" class="go" dest="about"> <i class="fa fa-user"></i> About Me</a>
+                        <a href="#about" class="go" dest="about"> <i class="fa fa-user"></i> About Me</a>
                     </li>
                     <li>
-                        <a href="#" class="go" dest="education"> <i class="fa fa-graduation-cap"></i> Educational Background</a>
+                        <a href="#education" class="go" dest="education"> <i class="fa fa-graduation-cap"></i> Educational Background</a>
                     </li>
                     <li>
-                        <a href="#" class="go" dest="work"> <i class="fa fa-briefcase"></i> Working Experience</a>
+                        <a href="#work" class="go" dest="work"> <i class="fa fa-briefcase"></i> Working Experience</a>
                     </li>
                     <li>
-                        <a href="#" class="go" dest="portfolio"> <i class="far fa-image" aria-hidden="true"></i> Portfolio</a>
+                        <a href="#portfolio" class="go" dest="portfolio"> <i class="far fa-image" aria-hidden="true"></i> Portfolio</a>
                     </li>
                     <li>
-                        <a href="#" class="go" dest="contact"> <i class="fa fa-envelope"></i> Contact</a>
+                        <a href="#contact" class="go" dest="contact"> <i class="fa fa-envelope"></i> Contact</a>
                     </li>
                 </ul>
             </div>
@@ -82,7 +82,7 @@
                 </div>
             </nav>
 
-            <section id="banner">
+            <section id="banner" class="target">
 
                 <div class="container">
         
@@ -115,7 +115,7 @@
 	
             </section>
 
-            <section id="about">
+            <section id="about" class="target">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10 offset-md-1">
@@ -187,7 +187,7 @@
                                 <div>
                                     <h4>Tulip Innovative Technology</h4>
                                     <h5>PHP Advance with MVC Framework Course</h5>
-                                    <p>April, 2019 - June, 2019</p>
+                                    <p>April, 2018 - June, 2018</p>
                                 </div>
                             </div>    
                             <div class="d-flex mt-5">
@@ -197,7 +197,7 @@
                                 <div>
                                     <h4>Tulip Innovative Technology</h4>
                                     <h5>Professional Web Development Foundation Course</h5>
-                                    <p>January, 2019 - March, 2019</p>
+                                    <p>January, 2018 - March, 2018</p>
                                 </div>
                             </div>                   
                             <div class="d-flex mt-5">
@@ -221,7 +221,7 @@
                         <div class="col-md-10 offset-md-1 mb-3 text-center">
                             <h2 class="main-title">Working Experience</h2>
                         </div>
-                        <div class="col-md-10 offset-md-1 pb-5">             
+                        <div class="col-md-10 offset-md-1 pb-5">        
                             <div class="d-flex mt-5">
                                 <div class="mr-3">
                                     <i class="fa fa-briefcase"></i>
@@ -229,12 +229,12 @@
                                 <div>
                                     <h4>Senior Web Developer</h4>
                                     <h5>SEOMyanmar</h5>
-                                    <p>
-                                        July, 2019 - September , 2020
-                                    </p>
-                                    <span></span>
+                                    <p> July, 2019 - September , 2020 </p>
                                 </div>
                             </div>
+                            <!-- <div class="col-md-7">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum nulla ex explicabo nemo magnam quisquam magni, quaerat corrupti dolores necessitatibus natus sunt et? Quidem, sequi distinctio doloribus aperiam beatae vel corporis fugit ullam, explicabo maiores sapiente ratione tempore at labore, eaque voluptas eos! Dolor possimus repudiandae quibusdam, dolore sequi eligendi perferendis repellendus nisi debitis eveniet at, aut itaque magni sapiente enim, saepe explicabo officia. Sint dolorum, hic modi in placeat repellat iure sunt, earum dolore adipisci aut? Dicta ullam, et numquam doloremque mollitia neque, at nostrum dolorem repellendus quibusdam quos adipisci non culpa reprehenderit quisquam saepe animi maiores expedita beatae.</p>
+                            </div> -->
                                             
                             <div class="d-flex mt-5">
                                 <div class="mr-3">
@@ -252,6 +252,7 @@
                     </div>
                 </div>
             </section>
+
             <section id="portfolio">
                 <div class="container">
                     <div class="row justify-content-center">
@@ -406,7 +407,8 @@
               </button>
             </div>
             <div class="modal-body">
-                  <p> Contact form is just only frontend design. If you really want to contact me , please send mail to my gmail account -  <a href="mailto:arkarthannaing1@gmail.com" style="color:green"> arkarthannaing1@gmail.com </a> . </p>
+                  <p> Contact form is just only frontend design. </p>
+                  <p> If you really want to contact me , please send mail to my gmail account -  <a href="mailto:arkarthannaing1@gmail.com" style="color:green"> arkarthannaing1@gmail.com </a> . </p>
                   <p> Thanks ! </p>
             </div>
             <div class="modal-footer">
@@ -429,7 +431,52 @@
           $("#loader").fadeOut(2000);
           $("#myDiv").fadeIn(2000);
         }, 4000);
-    
+
+        // Cache selectors
+        var lastId,
+            topMenu = $("#top"),
+            topMenuHeight = topMenu.outerHeight()+ 200,
+            // All list items
+            menuItems = topMenu.find("a"),
+            // Anchors corresponding to menu items
+            scrollItems = menuItems.map(function(){
+            var item = $($(this).attr("href"));
+            if (item.length) { return item; }
+            });
+
+            // Bind click handler to menu items
+            // so we can get a fancy scroll animation
+            menuItems.click(function(e){
+            var href = $(this).attr("href"),
+                offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+            $('html, body').stop().animate({ 
+                scrollTop: offsetTop
+            }, 300);
+            e.preventDefault();
+            });
+
+            // Bind to scroll
+            $(window).scroll(function(){
+            // Get container scroll position
+            var fromTop = $(this).scrollTop()+topMenuHeight;
+            
+            // Get id of current scroll item
+            var cur = scrollItems.map(function(){
+                if ($(this).offset().top < fromTop)
+                return this;
+            });
+            // Get the id of the current element
+            cur = cur[cur.length-1];
+            var id = cur && cur.length ? cur[0].id : "";
+            
+            if (lastId !== id) {
+                lastId = id;
+                // Set/remove active class
+                menuItems
+                    .parent().removeClass("active")
+                    .end().filter("[href='#"+id+"']").parent().addClass("active");
+            }                   
+        });
         
     </script>
 
