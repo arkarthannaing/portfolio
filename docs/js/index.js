@@ -18,6 +18,8 @@ $(function() {
       },
       1000
     );
+
+    $('#'+anchor+" .main-title").addClass('animate__animated animate__bounceInRight');
   });
 
 
@@ -90,27 +92,27 @@ $(function() {
 
   function sidebarActive()
   {
-    const scrollTop = $(window).scrollTop();
-      console.log(scrollTop);
-      if( scrollTop < 600 ){
-        $("#top li").removeClass('active');
-        $( "#top ul li:nth-child(1)" ).addClass("active");
-      }if( scrollTop > 600 && scrollTop < 1300){
-        $("#top li").removeClass('active');
-        $( "#top ul li:nth-child(2)" ).addClass("active");
-      }else if( scrollTop > 1300 && scrollTop < 2000){
-        $("#top li").removeClass('active');
-        $( "#top ul li:nth-child(3)" ).addClass("active");
-      }else if( scrollTop > 2000 && scrollTop < 2600){
-        $("#top li").removeClass('active');
-        $( "#top ul li:nth-child(4)" ).addClass("active");
-      }else if( scrollTop > 2600 && scrollTop < 3500){
-        $("#top li").removeClass('active');
-        $( "#top ul li:nth-child(5)" ).addClass("active");
-      }else if( scrollTop > 3500 ){
-        $("#top li").removeClass('active');
-        $( "#top ul li:nth-child(6)" ).addClass("active");
-      }
+    // const scrollTop = $(window).scrollTop();
+    //   console.log(scrollTop);
+    //   if( scrollTop < 600 ){
+    //     $("#top li").removeClass('active');
+    //     $( "#top ul li:nth-child(1)" ).addClass("active");
+    //   }if( scrollTop > 600 && scrollTop < 1300){
+    //     $("#top li").removeClass('active');
+    //     $( "#top ul li:nth-child(2)" ).addClass("active");
+    //   }else if( scrollTop > 1300 && scrollTop < 2000){
+    //     $("#top li").removeClass('active');
+    //     $( "#top ul li:nth-child(3)" ).addClass("active");
+    //   }else if( scrollTop > 2000 && scrollTop < 2600){
+    //     $("#top li").removeClass('active');
+    //     $( "#top ul li:nth-child(4)" ).addClass("active");
+    //   }else if( scrollTop > 2600 && scrollTop < 3500){
+    //     $("#top li").removeClass('active');
+    //     $( "#top ul li:nth-child(5)" ).addClass("active");
+    //   }else if( scrollTop > 3500 ){
+    //     $("#top li").removeClass('active');
+    //     $( "#top ul li:nth-child(6)" ).addClass("active");
+    //   }
   }
 
   $(document).ready(function () {
@@ -151,4 +153,55 @@ $(document).ready(function(){
     $(this).removeClass("active");
   }
     $(this).addClass("active");
+});
+
+setTimeout(function () {
+  $("#loader").fadeOut(2000);
+  $("#myDiv").fadeIn(2000);
+}, 4000);
+
+// Cache selectors
+var lastId,
+    topMenu = $("#top"),
+    topMenuHeight = topMenu.outerHeight()+ 200,
+    // All list items
+    menuItems = topMenu.find("a"),
+    // Anchors corresponding to menu items
+    scrollItems = menuItems.map(function(){
+    var item = $($(this).attr("href"));
+    if (item.length) { return item; }
+    });
+
+    // Bind click handler to menu items
+    // so we can get a fancy scroll animation
+    menuItems.click(function(e){
+    var href = $(this).attr("href"),
+        offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+    $('html, body').stop().animate({ 
+        scrollTop: offsetTop
+    }, 1500);
+    e.preventDefault();
+    });
+
+    // Bind to scroll
+    $(window).scroll(function(){
+    // Get container scroll position
+    var fromTop = $(this).scrollTop()+topMenuHeight;
+            
+    // Get id of current scroll item
+    var cur = scrollItems.map(function(){
+        if ($(this).offset().top < fromTop)
+        return this;
+    });
+    // Get the id of the current element
+    cur = cur[cur.length-1];
+    var id = cur && cur.length ? cur[0].id : "";
+            
+    if (lastId !== id) {
+        lastId = id;
+        // Set/remove active class
+        menuItems
+            .parent().removeClass("active")
+            .end().filter("[href='#"+id+"']").parent().addClass("active");
+    }                   
 });
