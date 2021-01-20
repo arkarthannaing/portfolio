@@ -1,476 +1,687 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <title>Arkar Than Naing : Web Developer</title>
 
-    <meta name="description" content="Arkar Than Naing is a skillfull PHP,Laravel Web Developer from Yangon, Myanmar.">
-    <meta  name="keywords" content="PHP,Laravel,Developer,Yangon">
-    <meta name="author" content="Arkar Than Naing">
+    <meta
+      name="description"
+      content="Arkar Than Naing is a skillfull PHP,Laravel Web Developer from Yangon, Myanmar."
+    />
+    <meta name="keywords" content="PHP,Laravel,Developer,Yangon" />
+    <meta name="author" content="Arkar Than Naing" />
 
-    <link rel="shortcut icon" type="image/png" href="./images/fav.png"/>
+    <link rel="shortcut icon" type="image/png" href="./images/fav.png" />
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" >
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-    <link rel="stylesheet" href="./css/sidebar.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/sidebar.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-</head>
-
-<body id="home">
-
+  <body id="home">
     <span id="loader">
-        <img src="./images/loader.gif" alt="loader">
+      <img src="./images/loader.gif" alt="loader" />
     </span>
 
     <div class="wrapper" id="myDiv">
+      <!-- Sidebar  -->
+      <nav id="sidebar">
+        <div class="sidebar-header d-flex justify-content-between">
+          <h3 id="title">AKTN</h3>
+          <img
+            src="./images/profile.jpg"
+            alt="Profile Image"
+            id="profile-image"
+          />
+        </div>
 
-        <!-- Sidebar  -->
-        <nav id="sidebar">
-            <div class="sidebar-header d-flex justify-content-between">
-                <h3 id="title">AKTN</h3>
-                <img src="./images/profile.jpg" alt="Profile Image" id="profile-image">
-            </div>
+        <div id="top">
+          <ul class="list-unstyled components">
+            <li class="active">
+              <a href="#banner" class="go" dest="banner">
+                <i class="fa fa-home"></i> Home
+              </a>
+            </li>
+            <li>
+              <a href="#about" class="go" dest="about">
+                <i class="fa fa-user"></i> About Me</a
+              >
+            </li>
+            <li>
+              <a href="#education" class="go" dest="education">
+                <i class="fa fa-graduation-cap"></i> Educational Background</a
+              >
+            </li>
+            <li>
+              <a href="#work" class="go" dest="work">
+                <i class="fa fa-briefcase"></i> Working Experience</a
+              >
+            </li>
+            <li>
+              <a href="#portfolio" class="go" dest="portfolio">
+                <i class="far fa-image" aria-hidden="true"></i> Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="go" dest="contact">
+                <i class="fa fa-envelope"></i> Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div id="bottom">
+          <ul class="social-icons">
+            <li>
+              <a href="https://www.facebook.com/arkarthannaing" target="_blank">
+                <i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a href="mailto:arkarthannaing1@gmail.com" target="_blank">
+                <i class="far fa-envelope"></i
+              ></a>
+            </li>
+            <li>
+              <a href="tel:+959256100123" target="_blank">
+                <i class="fas fa-phone-alt"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/arkar-than-naing/"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+          </ul>
+          <small class="copyright"> &copy; 2020 <a href="/"> AKTN </a> </small>
+        </div>
+      </nav>
 
-            <div id="top">
-                <ul class="list-unstyled components">
-                    <li class="active">
-                        <a href="#banner" class="go" dest="banner"> <i class="fa fa-home"></i> Home </a>
-                    </li>
-                    <li>
-                        <a href="#about" class="go" dest="about"> <i class="fa fa-user"></i> About Me</a>
-                    </li>
-                    <li>
-                        <a href="#education" class="go" dest="education"> <i class="fa fa-graduation-cap"></i> Educational Background</a>
-                    </li>
-                    <li>
-                        <a href="#work" class="go" dest="work"> <i class="fa fa-briefcase"></i> Working Experience</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio" class="go" dest="portfolio"> <i class="far fa-image" aria-hidden="true"></i> Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="go" dest="contact"> <i class="fa fa-envelope"></i> Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div id="bottom">
-                <ul class="social-icons">        
-                    <li><a href="https://www.facebook.com/arkarthannaing" target="_blank">
-                        <i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li><a href="mailto:arkarthannaing1@gmail.com" target="_blank">
-                        <i class="far fa-envelope"></i></a>
-                    </li>
-                    <li><a href="tel:+959256100123" target="_blank">
-                        <i class="fas fa-phone-alt"></i></a>
-                    </li>
-                    <li><a href="https://www.linkedin.com/in/arkar-than-naing/" target="_blank">
-                        <i class="fab fa-linkedin"></i></a>
-                    </li>
-                </ul>
-                <small class="copyright"> &copy; 2020  <a href="/"> AKTN </a> </small>
-            </div>
+      <!-- Page Content  -->
+      <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <button type="button" id="sidebarCollapse" class="btn btn-dark">
+              <i class="fas fa-align-justify"></i>
+            </button>
+          </div>
         </nav>
 
-        <!-- Page Content  -->
-        <div id="content">
-
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid">
-
-                    <button type="button" id="sidebarCollapse" class="btn btn-dark">
-                    <i class="fas fa-align-justify"></i>
-                    </button>
-                </div>
-            </nav>
-
-            <section id="banner" class="target">
-
-                <div class="container">
-        
-                    <div class="row intro-box">
-
-                        <div class="col-md-12">
-                
-                            <div class="">
-                                <div class="mr-3">
-                                    <h1>Hi, I'm
-                                        <span class="typewrite" data-period="2000" data-type='[
+        <section id="banner" class="target">
+          <div class="container">
+            <div class="row intro-box">
+              <div class="col-md-12">
+                <div class="">
+                  <div class="mr-3">
+                    <h1>
+                      Hi, I'm
+                      <span
+                        class="typewrite"
+                        data-period="2000"
+                        data-type='[
                                             "Arkar Than Naing.",
                                             "Web Designer.",
                                             "Web Developer."
-                                        ]'>
-                                        <span class="wrap"></span>
-                                        </span>
-                                    </h1>
-                                </div>
-                            </div>
-
-                            <div id="about-btn" class="go myBtn mt-4" dest="about">
-                                 About Me 
-                            </div>
-                
-                        </div>  
-                    </div>
-
+                                        ]'
+                      >
+                        <span class="wrap"></span>
+                      </span>
+                    </h1>
+                  </div>
                 </div>
-	
-            </section>
 
-            <section id="about" class="target">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-10 offset-md-1">
-                            <h2 class="mb-3 main-title text-center">ABOUT ME</h2>
-                            <p class="text-justify">
-                            I am PHP Web Developer. I am graduated from Technological University (Meiktila). I have 2 years experienced in building many websites and web applications with php, laravel and wordpress etc. I also have experienced in making chatbot for facebook pages by using chatbot platform like chatfuel and manychat.
-                            </p>
-                        </div>
-
-                        <div class="col-md-10 offset-md-1 mt-3" id="skills">
-
-                            <h5 class="mb-3 sub-title">SKILLS</h5>
-
-                            <div class="d-flex" id="frontend">
-                                <p class="mr-3">Frontend </p>
-                                <span> HTML , CSS , Bootstrap , Tailwind , <br> JavaScript , jQuery , Vue.js (Basic)</span>
-                            </div>
-                            <div class="d-flex">
-                                <p class="mr-3">Backend </p>
-                                <span> PHP , Laravel </span>
-                            </div>
-                            <div class="d-flex">
-                                <p class="mr-3">Database </p>
-                                <span> MySQL</span>
-                            </div>
-                            <div class="d-flex">
-                                <p class="mr-3">CMS </p>
-                                <span> WordPress </span>
-                            </div>
-                            <div class="d-flex">
-                                <p class="mr-3">Chatbot </p>
-                                <span> Manychat , Chatfuel </span>
-                            </div>
-                            <div class="d-flex">
-                                <p class="mr-3"> Others </p>
-                                <span> Ajax , Git , Google Analytics , SEO Basic , <br> Photoshop , Microsoft Office </span>
-                            </div>
-                        </div>
-
-                        <div class="col-md-10 offset-md-1 mt-3" id="skills">
-
-                            <h5 class="mb-3 sub-title">LANGUAGES</h5>
-
-                            <div class="d-flex">
-                                <p class="mr-3"> Myanmar </p>
-                                <span> Native Speaker </span>
-                            </div>
-                            <div class="d-flex">
-                                <p class="mr-3"> English </p>
-                                <span> Pre-Intermediate Level </span>
-                            </div>
-                        </div>
-
-                    </div>
+                <div id="about-btn" class="go myBtn mt-4" dest="about">
+                  About Me
                 </div>
-            </section>
+              </div>
+            </div>
+          </div>
+        </section>
 
-            <section id="education">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-10 offset-md-1 mb-3 text-center">
-                            <h2 class="main-title">Educational Background</h2>
-                        </div>
-                        <div class="col-md-10 offset-md-1 pb-3">
-                            <div class="d-flex mt-5">
-                                <div class="mr-3">
-                                    <i class="fa fa-graduation-cap"></i>
-                                </div>
-                                <div>
-                                    <h4>Tulip Innovative Technology</h4>
-                                    <h5>PHP Advance with MVC Framework Course</h5>
-                                    <p>April, 2018 - June, 2018</p>
-                                </div>
-                            </div>    
-                            <div class="d-flex mt-5">
-                                <div class="mr-3">
-                                    <i class="fa fa-graduation-cap"></i>
-                                </div>
-                                <div>
-                                    <h4>Tulip Innovative Technology</h4>
-                                    <h5>Professional Web Development Foundation Course</h5>
-                                    <p>January, 2018 - March, 2018</p>
-                                </div>
-                            </div>                   
-                            <div class="d-flex mt-5">
-                                <div class="mr-3">
-                                    <i class="fa fa-graduation-cap"></i>
-                                </div>
-                                <div>
-                                    <h4>Technological University (Meiktila)</h4>
-                                    <h5>Bachelor of Engineering (Mechanical)</h5>
-                                    <p>November, 2009 - November, 2015</p>
-                                </div>             
-                            </div>
-                        </div>
-                    </div>
+        <section id="about" class="target">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 offset-md-1">
+                <h2 class="mb-3 main-title text-center">ABOUT ME</h2>
+                <p class="text-justify">
+                  I am PHP Web Developer. I am graduated from Technological
+                  University (Meiktila). I have 2 years experienced in building
+                  many websites and web applications with php, laravel and
+                  wordpress etc. I also have experienced in making chatbot for
+                  facebook pages by using chatbot platform like chatfuel and
+                  manychat.
+                </p>
+              </div>
+
+              <div class="col-md-10 offset-md-1 mt-3" id="skills">
+                <h5 class="mb-3 sub-title">SKILLS</h5>
+
+                <div class="d-flex" id="frontend">
+                  <p class="mr-3">Front end</p>
+                  <span>
+                    HTML , CSS , Bootstrap , Tailwind , <br />
+                    JavaScript , jQuery , Vue.js (Basic)</span
+                  >
                 </div>
-            </section>
-
-            <section id="work">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-10 offset-md-1 mb-3 text-center">
-                            <h2 class="main-title">Working Experience</h2>
-                        </div>
-                        <!-- <div class="col-md-10 offset-md-1 pb-5">        
-                            <div class="d-flex mt-5">
-                                <div class="mr-3">
-                                    <i class="fa fa-briefcase"></i>
-                                </div>
-                                <div>
-                                    <h4>Senior Web Developer</h4>
-                                    <h5>SEOMyanmar</h5>
-                                    <p> July, 2019 - September , 2020 </p>
-                                </div>
-                            </div>   
-                            <div class="d-flex mt-5">
-                                <div class="mr-3">
-                                    <i class="fa fa-briefcase"></i>
-                                </div>
-                                <div>
-                                    <h4>Junior Web Developer</h4>
-                                    <h5>Cyan Web Solution</h5>
-                                    <p>
-                                        July, 2018 - July, 2019
-                                    </p>
-                                </div>
-                            </div>
-                        </div> -->
-
-                        <div class="col-md-10" data-aos="fade-up" data-aos-delay="100">
-
-                            <div class="resume-item">
-                              <h5>Senior Web Developer</h5>
-                              <h6>  July, 2019 - September , 2020  </h6>
-                              <p><em>SEOMyanmar</em></p>
-                              <ul>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ex quasi non quo </li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ex quasi non quo </li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ex quasi non quo </li>
-                              </ul>
-                            </div>
-
-                            <div class="resume-item mt-5">
-                              <h5>Junior Web Developer</h5>
-                              <h6> July, 2018 - July, 2019</h6>
-                              <p><em>Cyan Web Solution</em></p>
-                              <ul>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ex quasi non quo </li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ex quasi non quo </li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ex quasi non quo </li>
-                              </ul>
-                            </div>
-
-                          </div>
-                    </div>
+                <div class="d-flex">
+                  <p class="mr-3">Back end</p>
+                  <span> PHP & Laravel </span>
                 </div>
-            </section>
-
-            <section id="portfolio">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
-                            <h2 class="main-title text-center mb-3">Portfolio</h2>
-
-                            <p class="sub-title text-center mb-5">These are some of my projects together coding with my teammates.</p>
-
-                            <div align="center">
-                                <button class="btn btn-default filter-button choose" data-filter="laravel">Laravel</button>
-                                <button class="btn btn-default filter-button" data-filter="wordpress">Wordpress</button>
-                                <button class="btn btn-default filter-button" data-filter="chatbot">Chatbot</button>
-                            </div>
-
-                        </div>
-
-                        <br/>
-
-                        <!-- Laravel Project -->
-
-                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter laravel">
-                            <a href="https://www.satekhunarr.com/" target="_blank">
-                                <img src="./images/laravel/satekhunarr.jpg" class="img-fluid" alt="Project Image">
-                            </a>
-                        </div>
-            
-                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter laravel">
-                            <a href="https://www.willtec-myanmar.com/" target="_blank">
-                                <img src="./images/laravel/willtec.jpg" class="img-fluid" alt="Project Image">
-                            </a>
-                        </div>
-
-                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter laravel">
-                            <a href="https://www.thehubhotelmyanmar.com/" target="_blank">
-                                <img src="./images/laravel/hub.jpg" class="img-fluid" alt="Project Image">
-                            </a>
-                        </div>
-
-                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter laravel">
-                            <a href="https://www.mmrpropertyguru.com/" target="_blank">
-                                <img src="./images/laravel/mpg.jpg" class="img-fluid" alt="Project Image">
-                            </a>
-                        </div>
-
-                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter laravel">
-                            <a href="javascript:void(0)" target="_blank">
-                                <img src="./images/no_image.jpg" class="img-fluid" alt="Project Image">
-                            </a>
-                        </div>
-
-                        <!-- Wordpress Project -->
-
-                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter wordpress">
-                            <a href="https://www.timescity.com.mm/" target="_blank">
-
-                                <img src="./images/wordpress/timescity.jpg" class="img-fluid" alt="Project Image">
-                            </a>
-                        </div>
-
-                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter wordpress">
-                            <a href="https://www.aryuhospital.com/" target="_blank">
-                                <img src="./images/wordpress/aryu.jpg" class="img-fluid" alt="Project Image">
-                            </a>
-                        </div>
-
-                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter wordpress">
-                            <a href="https://www.divinginmyanmar.com/" target="_blank">
-                                <img src="./images/wordpress/mdc.jpg" class="img-fluid" alt="Project Image">
-                            </a>
-                        </div>
-
-                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter wordpress">
-                            <a href="https://www.agmtravelmyanmar.com/" target="_blank">
-                                <img src="./images/wordpress/agm.jpg" class="img-fluid" alt="Project Image">
-                            </a>
-                        </div>
-
-                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter wordpress">
-                            <a href="https://www.amazingplanettravel.com/" target="_blank">
-                                <img src="./images/wordpress/amazing.jpg" class="img-fluid" alt="Project Image">
-                            </a>
-                        </div>
-
-                        <!-- Chatbot Project -->
-
-                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter chatbot">
-                            <a href="https://www.facebook.com/satekhunarr.ska" target="_blank">
-                                <img src="./images/chatbot/satekhunarr.jpg" class="img-fluid" alt="Project Image">
-                            </a>
-                        </div>
-
-                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter chatbot">
-                            <a href="https://www.facebook.com/tajimamm" target="_blank">
-                                <img src="./images/chatbot/tajima.jpg" class="img-fluid" alt="Project Image">
-                            </a>
-                        </div>
-
-                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter chatbot">
-                            <a href="https://www.facebook.com/TWburmesetraditionaldessert" target="_blank">
-                                <img src="./images/chatbot/tw.jpg" class="img-fluid" alt="Project Image">
-                            </a>
-                        </div>
-
-                    </div>
+                <div class="d-flex">
+                  <p class="mr-3">Database</p>
+                  <span> MySQL</span>
                 </div>
-            </section>
-            <section id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-10 offset-md-1 mb-3 text-center">
-                            <h2 class="main-title mb-3">Contact Me </h2>
-                            <p class="sub-title text-center mb-3">Have a question or want to work together with me ?</p>
-                        </div>
-                        <div class="col-md-5 pb-5">
-                            <!--Form with header-->
-                            <form action="#" method="post" onsubmit="return false;" >
-                                <div class="card rounded-0">
-                                    <div class="card-body">
-                                        <!--Body-->
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="name" placeholder="Your Name">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" name="email" placeholder="Your Email">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="phone" placeholder="Your Phone">
-                                        </div>
-                                        <div class="form-group">
-                                            <textarea class="form-control" placeholder="Your Message" name="desc" ></textarea>
-                                        </div>
-                                        <div class="text-center">
-                                            <button type="submit" class="btn btn-contact btn-block rounded-0 py-2" data-toggle="modal" data-target="#contact-modal">Send</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                            <!--Form with header-->
-                        </div>
-                        <div class="col-md-5 pb-5">
-                            <div class="card">
-                                <div class="card-body">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.341749171765!2d96.11639671434641!3d16.85898072226772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c195c01e9efee1%3A0x25f54f15409bd428!2sArkar%20Than%20Naing!5e0!3m2!1sen!2smm!4v1598509579899!5m2!1sen!2smm" width="100%" height="400px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="d-flex">
+                  <p class="mr-3">CMS</p>
+                  <span> WordPress </span>
                 </div>
-            </section>
-            
-        </div>
+                <div class="d-flex">
+                  <p class="mr-3">Chatbot</p>
+                  <span> Manychat , Chatfuel </span>
+                </div>
+                <div class="d-flex">
+                  <p class="mr-3">Others</p>
+                  <span>
+                    Ajax , Git , Google Analytics , SEO Basic , <br />
+                    Photoshop , Microsoft Office
+                  </span>
+                </div>
+              </div>
+
+              <div class="col-md-10 offset-md-1 mt-3" id="skills">
+                <h5 class="mb-3 sub-title">LANGUAGES</h5>
+
+                <div class="d-flex">
+                  <p class="mr-3">Myanmar</p>
+                  <span> Native Speaker </span>
+                </div>
+                <div class="d-flex">
+                  <p class="mr-3">English</p>
+                  <span> Pre-Intermediate Level </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="education">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-10 offset-md-1 mb-3 text-center">
+                <h2 class="main-title">Educational Background</h2>
+              </div>
+              <div class="col-md-10 offset-md-1 pb-3">
+                <div class="d-flex mt-5">
+                  <div class="mr-3">
+                    <i class="fa fa-graduation-cap"></i>
+                  </div>
+                  <div>
+                    <h4>Tulip Innovative Technology</h4>
+                    <h5>PHP Advance with MVC Framework Course</h5>
+                    <p>April, 2018 - June, 2018</p>
+                  </div>
+                </div>
+                <div class="d-flex mt-5">
+                  <div class="mr-3">
+                    <i class="fa fa-graduation-cap"></i>
+                  </div>
+                  <div>
+                    <h4>Tulip Innovative Technology</h4>
+                    <h5>Professional Web Development Foundation Course</h5>
+                    <p>January, 2018 - March, 2018</p>
+                  </div>
+                </div>
+                <div class="d-flex mt-5">
+                  <div class="mr-3">
+                    <i class="fa fa-graduation-cap"></i>
+                  </div>
+                  <div>
+                    <h4>Technological University (Meiktila)</h4>
+                    <h5>Bachelor of Engineering (Mechanical)</h5>
+                    <p>November, 2009 - November, 2015</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="work">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-10 offset-md-1 mb-3 text-center">
+                <h2 class="main-title">Working Experience</h2>
+              </div>
+
+              <div class="col-md-10 offset-md-1 mt-5">
+                <div class="d-flex">
+                  <div class="mr-3">
+                    <i class="fa fa-briefcase"></i>
+                  </div>
+
+                  <div class="resume-item">
+                    <h5>Web Developer</h5>
+                    <h6>July, 2019 - September , 2020</h6>
+                    <p><em>SEOMyanmar</em></p>
+                    <ul>
+                      <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Assumenda ex quasi non quo
+                      </li>
+                      <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Assumenda ex quasi non quo
+                      </li>
+                      <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Assumenda ex quasi non quo
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="d-flex mt-5">
+                  <div class="mr-3">
+                    <i class="fa fa-briefcase"></i>
+                  </div>
+
+                  <div class="resume-item">
+                    <h5>Web Developer</h5>
+                    <h6>July, 2018 - June, 2019</h6>
+                    <p><em>Cyan Web Solution</em></p>
+                    <ul>
+                      <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Assumenda ex quasi non quo
+                      </li>
+                      <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Assumenda ex quasi non quo
+                      </li>
+                      <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Assumenda ex quasi non quo
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="portfolio">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h2 class="main-title text-center mb-3">Portfolio</h2>
+
+                <p class="sub-title text-center mb-5">
+                  These are some of my projects together coding with my
+                  teammates.
+                </p>
+
+                <div align="center">
+                  <button
+                    class="btn btn-default filter-button choose"
+                    data-filter="laravel"
+                  >
+                    Laravel
+                  </button>
+                  <button
+                    class="btn btn-default filter-button"
+                    data-filter="wordpress"
+                  >
+                    Wordpress
+                  </button>
+                  <button
+                    class="btn btn-default filter-button"
+                    data-filter="chatbot"
+                  >
+                    Chatbot
+                  </button>
+                </div>
+              </div>
+
+              <br />
+
+              <!-- Laravel Project -->
+
+              <div
+                class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter laravel"
+              >
+                <a href="https://www.satekhunarr.com/" target="_blank">
+                  <img
+                    src="./images/laravel/satekhunarr.jpg"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </a>
+              </div>
+
+              <div
+                class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter laravel"
+              >
+                <a href="https://www.willtec-myanmar.com/" target="_blank">
+                  <img
+                    src="./images/laravel/willtec.jpg"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </a>
+              </div>
+
+              <div
+                class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter laravel"
+              >
+                <a href="https://www.thehubhotelmyanmar.com/" target="_blank">
+                  <img
+                    src="./images/laravel/hub.jpg"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </a>
+              </div>
+
+              <div
+                class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter laravel"
+              >
+                <a href="https://www.mmrpropertyguru.com/" target="_blank">
+                  <img
+                    src="./images/laravel/mpg.jpg"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </a>
+              </div>
+
+              <div
+                class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter laravel"
+              >
+                <a href="javascript:void(0)" target="_blank">
+                  <img
+                    src="./images/no_image.jpg"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </a>
+              </div>
+
+              <!-- Wordpress Project -->
+
+              <div
+                class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter wordpress"
+              >
+                <a href="https://www.timescity.com.mm/" target="_blank">
+                  <img
+                    src="./images/wordpress/timescity.jpg"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </a>
+              </div>
+
+              <div
+                class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter wordpress"
+              >
+                <a href="https://www.aryuhospital.com/" target="_blank">
+                  <img
+                    src="./images/wordpress/aryu.jpg"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </a>
+              </div>
+
+              <div
+                class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter wordpress"
+              >
+                <a href="https://www.divinginmyanmar.com/" target="_blank">
+                  <img
+                    src="./images/wordpress/mdc.jpg"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </a>
+              </div>
+
+              <div
+                class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter wordpress"
+              >
+                <a href="https://www.agmtravelmyanmar.com/" target="_blank">
+                  <img
+                    src="./images/wordpress/agm.jpg"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </a>
+              </div>
+
+              <div
+                class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter wordpress"
+              >
+                <a href="https://www.amazingplanettravel.com/" target="_blank">
+                  <img
+                    src="./images/wordpress/amazing.jpg"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </a>
+              </div>
+
+              <!-- Chatbot Project -->
+
+              <div
+                class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter chatbot"
+              >
+                <a
+                  href="https://www.facebook.com/satekhunarr.ska"
+                  target="_blank"
+                >
+                  <img
+                    src="./images/chatbot/satekhunarr.jpg"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </a>
+              </div>
+
+              <div
+                class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter chatbot"
+              >
+                <a href="https://www.facebook.com/tajimamm" target="_blank">
+                  <img
+                    src="./images/chatbot/tajima.jpg"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </a>
+              </div>
+
+              <div
+                class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter chatbot"
+              >
+                <a
+                  href="https://www.facebook.com/TWburmesetraditionaldessert"
+                  target="_blank"
+                >
+                  <img
+                    src="./images/chatbot/tw.jpg"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-10 offset-md-1 mb-3 text-center">
+                <h2 class="main-title mb-3">Contact Me</h2>
+                <p class="sub-title text-center mb-3">
+                  Have a question or want to work together with me ?
+                </p>
+              </div>
+              <div class="col-md-5 pb-5">
+                <!--Form with header-->
+                <form action="#" method="post" onsubmit="return false;">
+                  <div class="card rounded-0">
+                    <div class="card-body">
+                      <!--Body-->
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="name"
+                          placeholder="Your Name"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="email"
+                          class="form-control"
+                          name="email"
+                          placeholder="Your Email"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="phone"
+                          placeholder="Your Phone"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <textarea
+                          class="form-control"
+                          placeholder="Your Message"
+                          name="desc"
+                        ></textarea>
+                      </div>
+                      <div class="text-center">
+                        <button
+                          type="submit"
+                          class="btn btn-contact btn-block rounded-0 py-2"
+                          data-toggle="modal"
+                          data-target="#contact-modal"
+                        >
+                          Send
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <!--Form with header-->
+              </div>
+              <div class="col-md-5 pb-5">
+                <div class="card">
+                  <div class="card-body">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.341749171765!2d96.11639671434641!3d16.85898072226772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c195c01e9efee1%3A0x25f54f15409bd428!2sArkar%20Than%20Naing!5e0!3m2!1sen!2smm!4v1598509579899!5m2!1sen!2smm"
+                      width="100%"
+                      height="400px"
+                      frameborder="0"
+                      style="border: 0"
+                      allowfullscreen=""
+                      aria-hidden="false"
+                      tabindex="0"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
 
     <div id="topBtn" class="go myBtn" dest="home">
-        <i class="fa fa-arrow-up"></i>
+      <i class="fa fa-arrow-up"></i>
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Sorry !</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-                  <p> This contact form is just only for frontend design. </p>
-                  <p> If you really want to contact me , please send mail to my gmail account -  <a href="mailto:arkarthannaing1@gmail.com" style="color:green"> arkarthannaing1@gmail.com </a> . </p>
-                  <p> Thanks ! </p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
+    <div
+      class="modal fade"
+      id="contact-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Sorry !</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>This contact form is just only for frontend design.</p>
+            <p>
+              If you really want to contact me , please send mail to my gmail
+              account -
+              <a href="mailto:arkarthannaing1@gmail.com" style="color: green">
+                arkarthannaing1@gmail.com
+              </a>
+              .
+            </p>
+            <p>Thanks !</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
           </div>
         </div>
+      </div>
     </div>
 
-    
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+      integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+      integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/index.js"></script>
     <script src="./js/typing.js"></script>
-
-</body>
-
+  </body>
 </html>
