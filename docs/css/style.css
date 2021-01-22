@@ -277,6 +277,11 @@ a:focus {
 	}
 }
 
+@media ( max-width : 320px ){
+	#work{
+		height: 150vh;
+	}
+}
 /* Portfolio */
 
 #portfolio{
